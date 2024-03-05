@@ -22,3 +22,31 @@
     flex-direction: row;
   }
 }
+
+.sub-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+
+  div {
+    border-bottom: 10px solid #5222D0;
+
+    h2 {
+      // max-width: 50%;
+      font-size: 60px;
+      font-family: Roboto;
+    }
+  }
+
+  p {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 300;
+
+    strong {
+      color: #5222D0;
+    }
+  }
+}
