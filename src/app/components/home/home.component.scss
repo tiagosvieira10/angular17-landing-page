@@ -1,5 +1,11 @@
 @import "../../../color-variables.scss";
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+}
+
 .main-section {
   display: flex;
   align-items: center;
@@ -62,4 +68,10 @@
       font-style: normal;
     }
   }
+}
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
