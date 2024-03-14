@@ -81,7 +81,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  padding: 70px;
+  padding: 70px 40px;
   gap: 30px;
 
   h3 {
@@ -89,6 +89,7 @@ main {
     font-weight: 600;
     font-size: 32px;
     color: $primary-text;
+    margin: 20px auto;
   }
 
   p {
@@ -105,5 +106,26 @@ main {
 
   .project-guide {
     flex: 1;
+  }
+}
+
+.convertionFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  padding: 0 70px;
+
+  h1 {
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 700;
+
+    margin-bottom: 40px;
+
+    color: $primary-text;
   }
 }
