@@ -3,11 +3,18 @@
     <h3>Fique por dentro de tendências</h3>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum perferendis id deserunt eos sed consequatur eius, eaque soluta itaque assumenda dolor accusantium non nobis quae deleniti labore earum beatae sunt.</p>
   </div>
-  <form>
+  <form [formGroup]="newsForms">
     <label for="name"><p>Name</p></label>
-    <input id="name"/>
+    <input id="name" formControlName= "name"/>
     <label for="email"><p>Email</p></label>
-    <input id="email"/>
-    <btn-primary btn-text="se inscreva" variant="secondary"></btn-primary>
+    <input id="email" formControlName="email"/>
+    <btn-primary
+      btn-text="se inscreva"
+      variant="secondary"
+      (submit)="onSubmit()"
+      [disabled]="!newsForms.valid"
+      [loading]="loading()"
+    >
+    </btn-primary>
   </form>
 </section>
